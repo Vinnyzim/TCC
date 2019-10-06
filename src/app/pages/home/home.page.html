@@ -1,5 +1,20 @@
-
-
 <ion-content>
-  <ion-item-option color="danger" (click)="logout()" expand="">Sair </ion-item-option>
+    <ion-icon [routerLink]="['/perfil-contratante']" name="menu"></ion-icon>
+  <div class="container top" >
+      
+    <img src="/assets/IMG/logo.png">
+    <ion-slide>
+      <div class="slide-inner">
+        <ion-button class="ion-margin-top"  [routerLink]="['/perfil-contratante']" routerDirection="forward" color="" expand="">Buscar um Prestador</ion-button>
+
+        <ion-button class="ion-margin-top"[routerLink]="['/servicos-contratante']" routerDirection="forward" expand="">Serviços</ion-button>
+
+        <ion-button class="ion-margin-top"[routerLink]="['/avaliacao-pontuacao-contratante']" routerDirection="forward" expand="">Pontos / Avaliações</ion-button>
+
+        <ion-button class="ion-margin-top"[routerLink]="['/chat-contratante']" routerDirection="forward" expand="">Suas Conversas</ion-button>
+
+        <ion-button class="ion-margin-bottom" color="danger" (click)="logout()" expand="">Sair </ion-button>
+      </div>
+    </ion-slide>
+  </div>
 </ion-content>

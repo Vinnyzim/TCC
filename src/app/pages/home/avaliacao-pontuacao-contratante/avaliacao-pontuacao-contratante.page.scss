@@ -10,21 +10,18 @@ ion-content {
     width: 75%;
     
 }
-
 ion-slide{
+    margin-top: 25%;
     
-    height: 100%;
+    
+    height: 50%;
     background-color: #24A9E1;
     border-radius: 10px;
     
-    .slide-inner{
-        width: 75%;
-        color: #fff;
-        
-        border-radius: 10px;
-    }
+   
 
     ion-button{
+        display: block;
         --background: rgba(169, 225, 36, 0.5);
         border-radius: 10px;
         margin-bottom: 8%;
@@ -42,5 +39,3 @@ ion-slide{
     }
 
 }
-
-    

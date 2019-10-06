@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
-import { LoadingController, ToastController } from '@ionic/angular';
+import { LoadingController, ToastController, NavController } from '@ionic/angular';
 import { User } from 'src/app/interfaces/user';
 import { AuthService } from 'src/app/services/auth.service';
+import { PerfilContratante } from 'src/app/interfaces/perfil-contratante';
+import { Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { PerfilContratanteService } from 'src/app/services/perfil-contratante.service';
+
 
 @Component({
   selector: 'app-cadastro',
@@ -14,20 +19,35 @@ export class CadastroPage implements OnInit {
   public userRegister: User = {};
   private loading: any;
 
+  navCtrl: NavController;
+  perfilContratanteService: PerfilContratanteService;
+  public perfil: PerfilContratante = {};
+
   constructor(
+
     public keyboard: Keyboard,
     private authService: AuthService,
     private loadingCtrl: LoadingController,
     private toastCtrl: ToastController,
-  ) { }
+    private activeRoute: ActivatedRoute,
+
+  ) {
+
+  }
+
 
   ngOnInit() {
   }
+
+
+
+
   async register() {
     await this.presentLoading();
 
     try {
       await this.authService.register(this.userRegister);
+
     } catch (error) {
 
       let message: string;

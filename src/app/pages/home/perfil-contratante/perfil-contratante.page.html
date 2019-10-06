@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+  
+      <ion-title>Buscar Prestador</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+    <div class="container top" >
+      <img src="/assets/IMG/logo.png">
+      <ion-slide>
+        <div class="slide-inner">
+          <ion-button class="ion-margin-top"  [routerLink]="['/perfil-contratante']" color="" expand="block">Diarista 1</ion-button>
+  
+          <ion-button class="ion-margin-top" (click)="logout()" expand="block">Diarista 2</ion-button>
+  
+          <ion-button class="ion-margin-top" (click)="logout()" expand="block">Diarista 3</ion-button>
+  
+          <ion-button class="ion-margin-top" (click)="logout()" expand="block">Diarista 4</ion-button>
+  
+        </div>
+      </ion-slide>
+    </div>
+  </ion-content>

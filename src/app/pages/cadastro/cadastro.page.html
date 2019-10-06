@@ -15,19 +15,19 @@
   <ion-slide>
     <div class="slide-inner">
       <ion-item class="ion-margin-top" lines="none">
-        <ion-input type="text" placeholder="Nome Completo"></ion-input>
+        <ion-input type="text" [(ngModel)]="perfil.nome" placeholder="Nome Completo"></ion-input>
       </ion-item>
 
       <ion-item class="ion-margin-top" lines="none">
-          <ion-input type="text" placeholder="CPF"></ion-input>
+          <ion-input type="text" [(ngModel)]="perfil.cpf" placeholder="CPF"></ion-input>
         </ion-item>
 
         <ion-item class="ion-margin-top" lines="none">
-            <ion-input type="text" placeholder="Telefone"></ion-input>
+            <ion-input type="text"[(ngModel)]="perfil.telefone" placeholder="Telefone"></ion-input>
           </ion-item>
 
           <ion-item class="ion-margin-top" lines="none">
-              <ion-input type="text" placeholder="Endereço"></ion-input>
+              <ion-input type="text" [(ngModel)]="perfil.endereco" placeholder="Endereço"></ion-input>
             </ion-item>
         <ion-item class="ion-margin-top" lines="none">
             <ion-input type="email" placeholder="E-mail" [(ngModel)]="userRegister.email"></ion-input>

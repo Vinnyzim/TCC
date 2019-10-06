@@ -6,14 +6,10 @@ ion-content {
     left: 0;
     right: 0;
     text-align: center;
-    margin: 0 auto;
+    margin: 5% auto;
     width: 100%;
     z-index: 2;
-    
-    &.top {
-        top: 0%;
-    }
-    
+   
 }
 
 
@@ -21,14 +17,13 @@ ion-content {
 ion-slides{
     
     height: 100%;
-    margin-top: 5%;
-    
     
     
     .slide-inner{
+        bottom: 0%;
         width: 75%;
         color: #fff;
-        background-color: #24A9E1;
+        background-color: rgba(36, 169, 225,0.9);
         border-radius: 10px;
     }
 

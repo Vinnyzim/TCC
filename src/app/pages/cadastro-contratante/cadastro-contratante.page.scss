@@ -1,5 +1,6 @@
 ion-content {
     --overflow: hidden;
+    
 }
 .container {
     position: absolute;
@@ -8,10 +9,7 @@ ion-content {
     text-align: center;
     margin: 1% auto;
     width: 75%;
-    
-    &.top {
-        top: 0%;
-    }
+
 }
 
 ion-slide{
