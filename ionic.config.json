@@ -1,0 +1,7 @@
+{
+  "name": "HomeClean",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
